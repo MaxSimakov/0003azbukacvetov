@@ -1,0 +1,196 @@
+doctype html
+html
+	head
+		meta(http-equiv='X-UA-Compatible' content='IE=edge')
+		meta(http-equiv='Content-Type' content='text/html; charset=utf-8')
+		meta(name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no')
+		link(rel='shortcut icon' type='image/x-icon' href='../favicon.ico')
+		meta(http-equiv='Content-Type' content='text/html; charset=UTF-8')
+		meta(name='robots' content='index, follow')
+		link(href='../bitrix/js/main/core/css/core5e8f.css?15002973513963' type='text/css' rel='stylesheet')
+		script(type='text/javascript' data-skip-moving='true').
+			//- (function (w, d, n) { var cl = "bx-core"; var ht = d.documentElement; var htc = ht ? ht.className : undefined; if (htc === undefined || htc.indexOf(cl) !== -1) { return; } var ua = n.userAgent; if (/(iPad;)|(iPhone;)/i.test(ua)) { cl += " bx-ios"; } else if (/Android/i.test(ua)) { cl += " bx-android"; } cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch"); cl += w.devicePixelRatio && w.devicePixelRatio >= 2 ? " bx-retina" : " bx-no-retina"; var ieVersion = -1; if (/AppleWebKit/.test(ua)) { cl += " bx-chrome"; } else if ((ieVersion = getIeVersion()) > 0) { cl += " bx-ie bx-ie" + ieVersion; if (ieVersion > 7 && ieVersion < 10 && !isDoctype()) { cl += " bx-quirks"; } } else if (/Opera/.test(ua)) { cl += " bx-opera"; } else if (/Gecko/.test(ua)) { cl += " bx-firefox"; } if (/Macintosh/i.test(ua)) { cl += " bx-mac"; } ht.className = htc ? htc + " " + cl : cl; function isDoctype() { if (d.compatMode) { return d.compatMode == "CSS1Compat"; } return d.documentElement && d.documentElement.clientHeight; } function getIeVersion() { if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)) { return -1; } var rv = -1; if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)) { rv = 11; } else if (!!d.documentMode && d.documentMode >= 10) { rv = 10; } else if (!!d.documentMode && d.documentMode >= 9) { rv = 9; } else if (d.attachEvent && !/Opera/.test(ua)) { rv = 8; } if (rv == -1 || rv == 8) { var re; if (n.appName == "Microsoft Internet Explorer") { re = new RegExp("MSIE ([0-9]+[\.0-9]*)"); if (re.exec(ua) != null) { rv = parseFloat(RegExp.$1); } } else if (n.appName == "Netscape") { rv = 11; re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)"); if (re.exec(ua) != null) { rv = parseFloat(RegExp.$1); } } } return rv; } })(window, document, navigator);
+		link(href='../bitrix/templates/eshop_bootstrap_red/css/style8291.css?162121149084412' type='text/css' data-template-style='true' rel='stylesheet')
+		//- link(href='../bitrix/templates/eshop_bootstrap_red/css/owl.carousel1d23.css?15010731374075' type='text/css' data-template-style='true' rel='stylesheet')
+		link(href='../bitrix/templates/eshop_bootstrap_red/css/jquery.formstyler47a9.css?150107313713729' type='text/css' data-template-style='true' rel='stylesheet')
+		link(href='../bitrix/templates/eshop_bootstrap_red/css/jquery.fancyboxa91d.css?150107313713410' type='text/css' data-template-style='true' rel='stylesheet')
+		link(href='../bitrix/templates/eshop_bootstrap_red/css/jquery-uia366.css?15010731374714' type='text/css' data-template-style='true' rel='stylesheet')
+		link(href='../bitrix/templates/eshop_bootstrap_red/css/jquery.ui.timepicker5368.css?15010731371341' type='text/css' data-template-style='true' rel='stylesheet')
+		link(href='../bitrix/templates/eshop_bootstrap_red/components/bitrix/sale.basket.basket.line/smallcart/styleac44.css?15012506594229' type='text/css' data-template-style='true' rel='stylesheet')
+		link(href='../bitrix/templates/eshop_bootstrap_red/components/bitrix/menu/top_menu/stylebfcb.css?1500450238581' type='text/css' data-template-style='true' rel='stylesheet')
+		link(href='../bitrix/templates/eshop_bootstrap_red/components/bitrix/breadcrumb/breadcrumbs/style939b.css?1500626283563' type='text/css' data-template-style='true' rel='stylesheet')
+		link(rel='stylesheet' href='css/style.css')
+		title Оформление мероприятий
+	body
+		.wrapper 
+			#panel
+			header.header
+				.container
+					div(class='h_basketWrap')
+						.bx-basket.bx-opener(id='bx_basketFKauiI')
+							//- 'start_frame_cache_bx_basketFKauiI'
+							div(class='but_blue hb_but')
+								i Корзина
+								span#cartkol 0
+							div(class='h_basket')
+								.center(style='padding-bottom:10px;font-size:18px;') Ваша корзина пуста
+							//- 'end_frame_cache_bx_basketFKauiI'
+					a(href='../index.html' class='h_logo')
+					div(class='h_mobileHidden')
+						div(class='hmh_but')
+						div(class='hmh_body')
+							div(class='hmh_close')
+							div(class='h_city')
+								#cityWatch(class='hc_current')
+									| Рязань
+									//- Саратов
+								//-
+									<ul class="hc_list" id="citySet">
+									<li value="moscow">Москва и область</li>
+									<li value="saratov">Саратов</li>
+									</ul>
+							//- new 1907
+							//-
+								<div class="h_cityAsk" style="display:none;">
+								<span>Это ваш регион?</span>
+								<a href="#" class="but_blue" id="cityDa">Да</a>
+								<a href="#" class="but_lightGrey" id="cityNet">Нет</a>
+								</div>
+							//- end new 1907
+							nav(class='h_catMenu')
+								ul(class='hcm_lvl1')
+									li
+										a(href='bukety/index.html') Букеты
+									li
+										a(href='tsvety/index.html') Цветы
+									li
+										a(href='tsvetochnye_kompozitsii/index.html') Цветочные композиции
+									li
+										a(href='igrushki/index.html') Игрушки
+									li
+										a(href='vozdushnye_shary/index.html') Шары
+							nav(class='h_menu')
+								a(href='../about/index.html') О магазине
+								a(href='../delivery/index.html') Доставка и оплата
+								a(href='../contacts/index.html') Контакты
+								a(href='../corporate/index.html') Корпоративным клиентам
+							div(class='h_tel')
+								a(href='tel:+79036182274') +7(903) 618-22-74
+								a(href='#pp_callback' class='ht_callback fancybox') Заказать обратный звонок
+
+			article.breadCrumbs
+				.container
+					a(href='../index.html') Главная страница
+					|  - 
+					a(href='../index.html') О&nbsp;магазине
+					|  - 
+					span Гарантия
+
+			section.header-block
+				.container
+					.section-title.text-center
+						h1 Оформление мероприятий
+						img.bg-image.bg-image--left(src="img/bg-flowers-1.svg", alt="")
+						img.bg-image.bg-image--right(src="img/bg-flowers-2.svg", alt="")
+						.header-block__text Корпоративное обслуживание клиентов&nbsp;&mdash; одно из&nbsp;основных направлений деятельности студии &laquo;Азбука Цветов&raquo;. За&nbsp;годы работы наши специалисты приобрели большой практический опыт, позволяющий на&nbsp;высоком уровне обслуживать различного рода мероприятия.
+
+			section.advantages
+				.container
+					.row
+						mixin advantagesItem(i, h ,t)
+							.col-12.col-sm-6.col-md-4
+								.advantages__item
+									img(src=`img/advantages-${i}.svg`, alt="")
+									h3!= h
+									p!= t
+						+advantagesItem(`1`, `Авторский дизайн`, `Мы готовы предложить нашим клиентам эксклюзивные решения по дизайну оформления в стилистике вашего мероприятия, учитывая в том числе фирменные цвета компании`)
+						+advantagesItem(`2`, `Бережная доставка`, `Мы заботимся о качестве материалов и&nbsp;сервиса для того, чтобы ваше мероприятие прошло на высшем уровне! Поэтому особое внимание уделяем процессу транспортировки композиций из салона на конечный адрес`)
+						+advantagesItem(`3`, `Доступность`, `Мы всегда готовы предложить несколько вариантов оформления в рамках вашего бюджета, а система скидок и бонусов позволит сделать наше сотрудничество долгосрочным.`)
+
+			section.whyUs
+				.container
+					.row
+						.col-12.col-md-6.p-xs-0
+							.whyUs__img
+								img(src="img/whyus-1.jpg", alt="")
+						.col-12.col-md-6.pos-rel
+							.section-title
+								h2 Особые условия для&nbsp;Вас
+							p Мы рады Вам предлагожить специальную условия для корпоративных клиентов. В её основе — индивидуальный подход к каждому покупателю, а также особые условия покупки. Оставьте заявку на сотрудничество, чтобы узнать подробности и получить коммерческое предложение
+							a.btn.btn--request(href="") Оставить заявку
+							img.bg-image.bg-image--bottom(src="img/bg-flowers-2.svg", alt="")
+
+			section.eventCatalog
+				.section-title.text-center
+					h2 Виды мероприятий
+				.container
+					.row
+						mixin eventCatalogItem(i, t)
+							.col-12.col-sm-6.col-md-4.col-lg-3
+								a.eventCatalog__item(href='#')
+									.eventCatalog__img-wrap
+										img(src=`img/event-catalog-${i}`, alt="")
+									.eventCatalog__text
+										span!= t
+						+eventCatalogItem(`1.jpg`, `Корпоративы`)
+						+eventCatalogItem(`2.jpg`, `Фотосессии`)
+						+eventCatalogItem(`3.jpg`, `Дни рождения и&nbsp;Юбилеи`)
+						+eventCatalogItem(`4.jpg`, `Гала-ужины`)
+						+eventCatalogItem(`5.jpg`, `Конференции и&nbsp;презентации`)
+						+eventCatalogItem(`6.jpg`, `Свадьбы и&nbsp;помолвки`)
+						+eventCatalogItem(`7.jpg`, `Флористическое сопровождение`)
+
+			article.homeCatalog
+				.section-title.text-center
+						h2 Каталог
+				.container
+					a(class='hc_item small' href='catalog/bukety/lilii/index.html' style='background-image:url(upload/iblock/b7c/b7cb3af490b4ab66f29155daa469358e.png);background-color:#d9e5f2;')
+						div(class='hci_text')
+							div(class='hci_title') Композиции в корзинах
+							p От лучших мастеров флористики
+					a(class='hc_item medium' href='catalog/tsvety/index.html' style='background-image:url(upload/iblock/d5a/d5a668292746fc492a335ec1fb2a5837.png);background-color:#f2e3eb;')
+						div(class='hci_text')
+							div(class='hci_title') Свадебные букеты на любой вкус
+							p Идеальный свадебный букет, гармонирующий с Вашим платьем
+					a(class='hc_item medium' href='catalog/bukety/lilii/index.html' style='background-image:url(upload/iblock/5b5/5b5109b89c65f9bbfeaefe0a32333bdb.png);background-color:#ebe0f5;')
+						div(class='hci_text')
+							div(class='hci_title') Цветы в коробке
+							p Коробка с цветами "Сан-Франциско"
+					a(class='hc_item small' href='catalog/bukety/rozy/index.html' style='background-image:url(upload/iblock/7e4/7e4cec95f02bd43ca6aa4abf6b07950a.png);background-color:#e4f2ca;')
+						div(class='hci_text')
+							div(class='hci_title') Сердца из роз
+							p Яркое выражение чувств
+
+			section.whyUs
+				.container
+					.row
+						.col-12.col-md-6.p-xs-0
+							.whyUs__img
+								img(src="img/whyus-2.jpg", alt="")
+						.col-12.col-md-6.pos-rel
+							.section-title
+								h2 Почему стоит доверить свое мероприятие нам?
+							p Праздник – это всегда тщательная подготовка. Важна каждая деталь, которая оставит неизгладимое впечатление на каждого участника мероприятия.  Ваши праздники превратятся в высокую поэзию живых цветов и будут выглядеть на уровне мировых стандартов!
+							a.btn.btn--request(href="") Оставить заявку
+							img.bg-image.bg-image--top(src="img/bg-flowers-3.svg", alt="")
+
+			footer.footer
+				.container
+					div(class='f_logo')
+					div(class='f_contacts')
+						p Интернет-магазин продажи 
+							br
+							| и доставки цветов
+						a(href='tel:+79036182274') +7(903) 618-22-74
+					div(class='f_soc')
+						p Мы в социальных сетях
+						a(class='fs_fb' href='#')
+						a(class='fs_vk' href='#')
+						a(class='fs_inst' href='https://www.instagram.com/azbukacvettov')
+					br
+					div(class='f_bitrix')
+						a(href='#') Быстро 1С Битрикс
+					div(class='f_roonix')
+						p Сделано с 
+							span ❤
+						img(src='bitrix/templates/eshop_bootstrap_red/images/roonix.svg' alt='')

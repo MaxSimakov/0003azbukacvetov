@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="robots" content="index, follow">
+    <link href="bitrix/js/main/core/css/core5e8f.css?15002973513963" type="text/css" rel="stylesheet">
+    
+    <script type="text/javascript" data-skip-moving="true">(function (w, d, n) { var cl = "bx-core"; var ht = d.documentElement; var htc = ht ? ht.className : undefined; if (htc === undefined || htc.indexOf(cl) !== -1) { return; } var ua = n.userAgent; if (/(iPad;)|(iPhone;)/i.test(ua)) { cl += " bx-ios"; } else if (/Android/i.test(ua)) { cl += " bx-android"; } cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch"); cl += w.devicePixelRatio && w.devicePixelRatio >= 2 ? " bx-retina" : " bx-no-retina"; var ieVersion = -1; if (/AppleWebKit/.test(ua)) { cl += " bx-chrome"; } else if ((ieVersion = getIeVersion()) > 0) { cl += " bx-ie bx-ie" + ieVersion; if (ieVersion > 7 && ieVersion < 10 && !isDoctype()) { cl += " bx-quirks"; } } else if (/Opera/.test(ua)) { cl += " bx-opera"; } else if (/Gecko/.test(ua)) { cl += " bx-firefox"; } if (/Macintosh/i.test(ua)) { cl += " bx-mac"; } ht.className = htc ? htc + " " + cl : cl; function isDoctype() { if (d.compatMode) { return d.compatMode == "CSS1Compat"; } return d.documentElement && d.documentElement.clientHeight; } function getIeVersion() { if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)) { return -1; } var rv = -1; if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)) { rv = 11; } else if (!!d.documentMode && d.documentMode >= 10) { rv = 10; } else if (!!d.documentMode && d.documentMode >= 9) { rv = 9; } else if (d.attachEvent && !/Opera/.test(ua)) { rv = 8; } if (rv == -1 || rv == 8) { var re; if (n.appName == "Microsoft Internet Explorer") { re = new RegExp("MSIE ([0-9]+[\\.0-9]*)"); if (re.exec(ua) != null) { rv = parseFloat(RegExp.$1); } } else if (n.appName == "Netscape") { rv = 11; re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)"); if (re.exec(ua) != null) { rv = parseFloat(RegExp.$1); } } } return rv; } })(window, document, navigator);</script>
+    <link href="bitrix/js/ui/fonts/opensans/ui.font.opensans1c48.css?16159740882003" type="text/css" rel="stylesheet">
+    <link href="bitrix/js/main/popup/dist/main.popup.bundlef811.css?161718618626339" type="text/css" rel="stylesheet">
+    <link href="bitrix/templates/eshop_bootstrap_red/css/style8291.css?162121149084412" type="text/css" data-template-style="true" rel="stylesheet">
+    <link href="bitrix/templates/eshop_bootstrap_red/css/owl.carousel1d23.css?15010731374075" type="text/css" data-template-style="true" rel="stylesheet">
+    <link href="bitrix/templates/eshop_bootstrap_red/css/jquery.formstyler47a9.css?150107313713729" type="text/css" data-template-style="true" rel="stylesheet">
+    <link href="bitrix/templates/eshop_bootstrap_red/css/jquery.fancyboxa91d.css?150107313713410" type="text/css" data-template-style="true" rel="stylesheet">
+    <link href="bitrix/templates/eshop_bootstrap_red/css/jquery-uia366.css?15010731374714" type="text/css" data-template-style="true" rel="stylesheet">
+    <link href="bitrix/templates/eshop_bootstrap_red/css/jquery.ui.timepicker5368.css?15010731371341" type="text/css" data-template-style="true" rel="stylesheet">
+    <link href="bitrix/templates/eshop_bootstrap_red/components/bitrix/sale.basket.basket.line/smallcart/styleac44.css?15012506594229" type="text/css" data-template-style="true" rel="stylesheet">
+    <link href="bitrix/templates/eshop_bootstrap_red/components/bitrix/menu/top_menu/stylebfcb.css?1500450238581" type="text/css" data-template-style="true" rel="stylesheet">
+    <title></title>
+  </head>
+  <body>
+    <div id="panel"></div>
+    <header class="header">
+      <div class="container">
+        <div class="h_basketWrap">
+          <div class="bx-basket bx-opener" id="bx_basketFKauiI">
+            <!-- 'start_frame_cache_bx_basketFKauiI'-->
+            <div class="but_blue hb_but"><i>Корзина</i><span id="cartkol">0</span></div>
+            <div class="h_basket">
+              <div class="center" style="padding-bottom:10px;font-size:18px;">Ваша корзина пуста</div>
+            </div>
+            <!-- 'end_frame_cache_bx_basketFKauiI'-->
+          </div>
+        </div><a class="h_logo" href="index.html"></a>
+        <div class="h_mobileHidden">
+          <div class="hmh_but"></div>
+          <div class="hmh_body">
+            <div class="hmh_close"></div>
+            <div class="h_city">
+              <div class="hc_current" id="cityWatch">Рязань
+                <!-- Саратов-->
+                <!--
+                <ul class="hc_list" id="citySet">
+                <li value="moscow">Москва и область</li>
+                <li value="saratov">Саратов</li>
+                </ul>
+                -->
+              </div>
+            </div>
+            <!-- new 1907-->
+            <!--
+            <div class="h_cityAsk" style="display:none;">
+            <span>Это ваш регион?</span>
+            <a href="#" class="but_blue" id="cityDa">Да</a>
+            <a href="#" class="but_lightGrey" id="cityNet">Нет</a>
+            </div>
+            -->
+            <!-- end new 1907-->
+            <nav class="h_catMenu">
+              <ul class="hcm_lvl1">
+                <li><a href="catalog/bukety/index.html">Букеты</a></li>
+                <li><a href="catalog/tsvety/index.html">Цветы</a></li>
+                <li><a href="catalog/tsvetochnye_kompozitsii/index.html">Цветочные композиции</a></li>
+                <li><a href="catalog/igrushki/index.html">Игрушки</a></li>
+                <li><a href="catalog/vozdushnye_shary/index.html">Шары</a></li>
+              </ul>
+            </nav>
+            <nav class="h_menu"><a href="about/index.html">О магазине</a><a href="delivery/index.html">Доставка и оплата</a><a href="contacts/index.html">Контакты</a><a href="corporate/index.html">Корпоративным клиентам</a></nav>
+            <div class="h_tel"><a href="tel:+79036182274">+7(903) 618-22-74</a><a class="ht_callback fancybox" href="#pp_callback">Заказать обратный звонок</a></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <article class="homeCatalog">
+      <div class="container"><a class="hc_item small" href="catalog/bukety/lilii/index.html" style="background-image:url(upload/iblock/b7c/b7cb3af490b4ab66f29155daa469358e.png);background-color:#d9e5f2;">
+          <div class="hci_text">
+            <div class="hci_title">Композиции в корзинах</div>
+            <p>От лучших мастеров флористики</p>
+          </div></a><a class="hc_item medium" href="catalog/tsvety/index.html" style="background-image:url(upload/iblock/d5a/d5a668292746fc492a335ec1fb2a5837.png);background-color:#f2e3eb;">
+          <div class="hci_text">
+            <div class="hci_title">Свадебные букеты на любой вкус</div>
+            <p>Идеальный свадебный букет, гармонирующий с Вашим платьем</p>
+          </div></a><a class="hc_item medium" href="catalog/bukety/lilii/index.html" style="background-image:url(upload/iblock/5b5/5b5109b89c65f9bbfeaefe0a32333bdb.png);background-color:#ebe0f5;">
+          <div class="hci_text">
+            <div class="hci_title">Цветы в коробке</div>
+            <p>Коробка с цветами "Сан-Франциско"</p>
+          </div></a><a class="hc_item small" href="catalog/bukety/rozy/index.html" style="background-image:url(upload/iblock/7e4/7e4cec95f02bd43ca6aa4abf6b07950a.png);background-color:#e4f2ca;">
+          <div class="hci_text">
+            <div class="hci_title">Сердца из роз</div>
+            <p>Яркое выражение чувств</p>
+          </div></a></div>
+    </article>
+    <input id="popularMoreAll" type="hidden" value="1">
+    <article class="products">
+      <div class="container">
+        <h2 class="titleDecor ico1">Популярный букет</h2>
+      </div>
+      <div class="container column_3 nowrap">
+        <div class="prodItem">
+          <div class="pi_wrap"><img src="upload/iblock/83b/83bbabc2ae2c72b938278d265d75d570.jpg" alt="Букет №1">
+            <p>Букет №1</p><span class="pi_price">2500 руб.</span><a class="but_blue" href="catalog/bukety/buket_1/index.html">Подробнее</a>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- 'start_frame_cache_es4Hjc'-->
+    <div id="bigdata_recommended_products_Zz2YMH"></div>
+    <!-- 'end_frame_cache_es4Hjc'-->
+    <input id="newMoreAll" type="hidden" value="1">
+    <article class="products">
+      <div class="container">
+        <h2 class="titleDecor ico1">Новинки</h2>
+        <div class="column_3 nowrap">
+          <div class="prodItem">
+            <div class="prodLabel green">Новинка</div>
+            <div class="pi_wrap"><img src="upload/iblock/83b/83bbabc2ae2c72b938278d265d75d570.jpg" alt="Букет №1">
+              <p>Букет №1</p><span class="pi_price">2500 руб.</span><a class="but_blue" href="catalog/bukety/buket_1/index.html">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article class="triggers bgBlue">
+      <div class="container">
+        <h2 class="smallUnderline">Почему нас любят клиенты</h2>
+        <div class="t_body column_5">
+          <div class="tb_item">
+            <div class="tb_img"><img src="bitrix/templates/eshop_bootstrap_red/images/trig-item1.svg" alt=""></div><span>Фото перед отправкой</span>
+          </div>
+          <div class="tb_item">
+            <div class="tb_img"><img src="bitrix/templates/eshop_bootstrap_red/images/trig-item2.svg" alt=""></div><span>Гарантия качества</span>
+          </div>
+          <div class="tb_item">
+            <div class="tb_img"><img src="bitrix/templates/eshop_bootstrap_red/images/trig-item3.svg" alt=""></div><span>Доставка бесплатно</span>
+          </div>
+          <div class="tb_item">
+            <div class="tb_img"><img src="bitrix/templates/eshop_bootstrap_red/images/trig-item4.svg" alt=""></div><span>Подарки клиентам</span>
+          </div>
+          <div class="tb_item">
+            <div class="tb_img"><img src="bitrix/templates/eshop_bootstrap_red/images/trig-item5.svg" alt=""></div><span>Отчет о доставке</span>
+          </div>
+        </div>
+      </div>
+    </article>
+    <section class="colSect">
+      <div class="container column2-1">
+        <div class="col2-1-r">
+          <div class="cs_rev owl-carousel">
+            <div class="csr_item">
+              <h3 class="smallUnderline">Отзывы клиентов</h3>
+              <p>
+                Спасибо огромное за качественный сервис: быстрое взятие трубки, моментальное реагирование на посты во
+                ВКонтакте, вежливость и работу в праздники!
+              </p>
+              <div class="csr_author">Мария Магдаленова</div>
+            </div>
+            <div class="csr_item">
+              <h3 class="smallUnderline">Отзывы клиентов</h3>
+              <p>
+                Спасибо огромное за качественный сервис: быстрое взятие трубки, моментальное реагирование на посты во
+                ВКонтакте, вежливость и работу в праздники!
+              </p>
+              <div class="csr_author">Мария Магдаленова</div>
+            </div>
+            <div class="csr_item">
+              <h3 class="smallUnderline">Отзывы клиентов</h3>
+              <p>
+                Спасибо огромное за качественный сервис: быстрое взятие трубки, моментальное реагирование на посты во
+                ВКонтакте, вежливость и работу в праздники!
+              </p>
+              <div class="csr_author">Мария Магдаленова</div>
+            </div>
+          </div>
+        </div>
+        <article class="article col2-1-l">
+          <h1>Азбука Цветов - доставка цветов в Рязани</h1>
+          <div class="a_indent">
+            <p>
+              На нашем сайте Вы можете заказать доставку цветов по России и СНГ. Вы можете заказать цветы в 1678
+              населённых пункта страны. Если Вас интересует заказ цветов с доставкой в другой город, пожалуйста, свяжитесь
+              с операторами клиентской службы. Наш интернет-магазин цветов работает круглосуточно, без выходных. Доставка
+              цветов на дом получателю в любой город России производится в максимально короткие сроки - от 3 часов.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="f_logo"></div>
+        <div class="f_contacts">
+          <p>Интернет-магазин продажи <br> и доставки цветов</p><a href="tel:+79036182274">+7(903) 618-22-74</a>
+        </div>
+        <div class="f_soc">
+          <p>Мы в социальных сетях</p><a class="fs_fb" href="#"></a><a class="fs_vk" href="#"></a><a class="fs_inst" href="https://www.instagram.com/azbukacvettov"></a>
+        </div><br>
+        <div class="f_bitrix"><a href="#">Быстро 1С Битрикс</a></div>
+        <div class="f_roonix">
+          <p>Сделано с <span>❤</span></p><img src="bitrix/templates/eshop_bootstrap_red/images/roonix.svg" alt="">
+        </div>
+      </div>
+    </footer>
+    <div class="popup" id="pp_callback">
+      <div id="formc">
+        <div class="pp_title">Обратный звонок</div>
+        <div class="form_str"><span class="form_label required">Имя</span>
+          <input class="form_medium" id="namec" type="text" required="true">
+          <div class="form_alert" style="display:none;">Заполните имя</div>
+        </div>
+        <div class="form_str"><span class="form_label required">Телефон</span>
+          <input class="form_sMedium inputMask" id="telc" type="tel" required="true">
+          <div class="form_alert" style="display:none;">Заполните телефон</div>
+        </div>
+        <div class="form_but noLabel">
+          <button class="but_blue" id="sendc">Заказать обратный звонок</button>
+        </div>
+      </div>
+      <div id="thanksc" style="display:none;"><br>
+        <div style="text-align:center;font:bold 16px Arial;">Спасибо за заявку!</div>
+        <div style="text-align:center;font:normal 14px Arial;">Наши менеджеры свяжутся с Вами в ближайшее время.</div>
+      </div>
+    </div>
+    <script type="text/javascript">if (!window.BX) window.BX = {}; if (!window.BX.message) window.BX.message = function (mess) { if (typeof mess === 'object') { for (let i in mess) { BX.message[i] = mess[i]; } return true; } };</script>
+    <script type="text/javascript">(window.BX || top.BX).message({ 'JS_CORE_LOADING': 'Загрузка...', 'JS_CORE_NO_DATA': '- Нет данных -', 'JS_CORE_WINDOW_CLOSE': 'Закрыть', 'JS_CORE_WINDOW_EXPAND': 'Развернуть', 'JS_CORE_WINDOW_NARROW': 'Свернуть в окно', 'JS_CORE_WINDOW_SAVE': 'Сохранить', 'JS_CORE_WINDOW_CANCEL': 'Отменить', 'JS_CORE_WINDOW_CONTINUE': 'Продолжить', 'JS_CORE_H': 'ч', 'JS_CORE_M': 'м', 'JS_CORE_S': 'с', 'JSADM_AI_HIDE_EXTRA': 'Скрыть лишние', 'JSADM_AI_ALL_NOTIF': 'Показать все', 'JSADM_AUTH_REQ': 'Требуется авторизация!', 'JS_CORE_WINDOW_AUTH': 'Войти', 'JS_CORE_IMAGE_FULL': 'Полный размер' });</script>
+    <script type="text/javascript" src="bitrix/js/main/core/core09ea.js?1617186205549323"></script>
+    <script>
+      BX.setJSList(['/bitrix/js/main/core/core_ajax.js', 'bitrix/js/main/core/core_promise.js', 'bitrix/js/main/polyfill/promise/js/promise.js', 'bitrix/js/main/loadext/loadext.js', 'bitrix/js/main/loadext/extension.js', 'bitrix/js/main/polyfill/promise/js/promise.js', 'bitrix/js/main/polyfill/find/js/find.js', 'bitrix/js/main/polyfill/includes/js/includes.js', 'bitrix/js/main/polyfill/matches/js/matches.js', 'bitrix/js/ui/polyfill/closest/js/closest.html', 'bitrix/js/main/polyfill/fill/main.polyfill.fill.js', 'bitrix/js/main/polyfill/find/js/find.js', 'bitrix/js/main/polyfill/matches/js/matches.js', 'bitrix/js/main/polyfill/core/dist/polyfill.bundle.js', 'bitrix/js/main/core/core.js', 'bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js', 'bitrix/js/main/lazyload/dist/lazyload.bundle.js', 'bitrix/js/main/polyfill/core/dist/polyfill.bundle.js', '/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+      BX.setCSSList(['/bitrix/js/main/core/css/core.css', 'bitrix/js/main/lazyload/dist/lazyload.bundle.html', '/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+    </script>
+    <script type="text/javascript">(window.BX || top.BX).message({ 'LANGUAGE_ID': 'ru', 'FORMAT_DATE': 'DD.MM.YYYY', 'FORMAT_DATETIME': 'DD.MM.YYYY HH:MI:SS', 'COOKIE_PREFIX': 'BITRIX_SM', 'SERVER_TZ_OFFSET': '10800', 'SITE_ID': 's1', 'SITE_DIR': '/', 'USER_ID': '', 'SERVER_TIME': '1621333413', 'USER_TZ_OFFSET': '0', 'USER_TZ_AUTO': 'Y', 'bitrix_sessid': '1a0e441fe126616bb75c00ec5d5eb19f' });</script>
+    <script type="text/javascript" src="../ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="bitrix/js/main/popup/dist/main.popup.bundlec9dd.js?1617186197103976"></script>
+    <script type="text/javascript">
+      (function () {
+      "use strict";
+      var counter = function () {
+      var cookie = (function (name) {
+      var parts = ("; " + document.cookie).split("; " + name + "=");
+      if (parts.length == 2) {
+      try { return JSON.parse(decodeURIComponent(parts.pop().split(";").shift())); }
+      catch (e) { }
+      }
+      })("BITRIX_CONVERSION_CONTEXT_s1");
+      if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+      return;
+      var request = new XMLHttpRequest();
+      request.open("POST.html", "bitrix/tools/conversion/ajax_counter.html", true);
+      request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+      request.send(
+      "SITE_ID=" + encodeURIComponent("s1") +
+      "&sessid=" + encodeURIComponent(BX.bitrix_sessid()) +
+      "&HTTP_REFERER=" + encodeURIComponent(document.referrer)
+      );
+      };
+      if (window.frameRequestStart === true)
+      BX.addCustomEvent("onFrameDataReceived", counter);
+      else
+      BX.ready(counter);
+      })();
+    </script>
+    <script type="text/javascript" src="bitrix/templates/eshop_bootstrap_red/js/jquery-ui.minc6e0.js?150107314736675"></script>
+    <script type="text/javascript" src="bitrix/templates/eshop_bootstrap_red/js/owl.carousel.mina375.js?150107314842854"></script>
+    <script type="text/javascript" src="bitrix/templates/eshop_bootstrap_red/js/jquery.formstyler.min7902.js?150107314719139"></script>
+    <script type="text/javascript" src="bitrix/templates/eshop_bootstrap_red/js/jquery.fancybox.minc5be.js?150107314745500"></script>
+    <script type="text/javascript" src="bitrix/templates/eshop_bootstrap_red/js/jquery.ui.timepicker99dc.js?150107314766128"></script>
+    <script type="text/javascript" src="bitrix/templates/eshop_bootstrap_red/js/jquery.maskedinput.minbbcc.js?15010731474324"></script>
+    <script type="text/javascript" src="bitrix/templates/eshop_bootstrap_red/js/imagesloaded.pkgd.min451e.js?15017490025559"></script>
+    <script type="text/javascript" src="bitrix/templates/eshop_bootstrap_red/js/script82b8.js?15018296299737"></script>
+    <script type="text/javascript" src="bitrix/templates/eshop_bootstrap_red/js/oscript9c5e.js?15017165105981"></script>
+    <script type="text/javascript" src="bitrix/templates/eshop_bootstrap_red/components/bitrix/sale.basket.basket.line/smallcart/script49ea.js?15012506595292"></script>
+    <script type="text/javascript" src="bitrix/templates/eshop_bootstrap_red/components/bitrix/catalog.bigdata.products/bigdata/scriptbb62.js?150062418035719"></script>
+    <script type="text/javascript">var _ba = _ba || []; _ba.push(["aid", "37ac67df4dc5c83ecbe9d3eee33dd98f"]); _ba.push(["host", "www.azbukacvetov.com"]); (function () { var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true; ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ba, s); })();</script>
+    <script>var bx_basketFKauiI = new BitrixSmallCart;</script>
+    <script type="text/javascript">
+      bx_basketFKauiI.siteId = 's1';
+      bx_basketFKauiI.cartId = 'bx_basketFKauiI';
+      bx_basketFKauiI.ajaxPath = 'bitrix/components/bitrix/sale.basket.basket.line/ajax.html';
+      bx_basketFKauiI.templateName = 'smallcart';
+      bx_basketFKauiI.arParams = { 'HIDE_ON_BASKET_PAGES': 'N', 'PATH_TO_BASKET': '/cart/', 'PATH_TO_ORDER': '/order/make/', 'PATH_TO_PERSONAL': '/personal/', 'PATH_TO_PROFILE': '/personal/', 'PATH_TO_REGISTER': '/login/', 'POSITION_FIXED': 'N', 'POSITION_HORIZONTAL': 'right', 'POSITION_VERTICAL': 'top', 'SHOW_AUTHOR': 'N', 'SHOW_DELAY': 'N', 'SHOW_EMPTY_VALUES': 'Y', 'SHOW_IMAGE': 'Y', 'SHOW_NOTAVAIL': 'N', 'SHOW_NUM_PRODUCTS': 'Y', 'SHOW_PERSONAL_LINK': 'N', 'SHOW_PRICE': 'Y', 'SHOW_PRODUCTS': 'Y', 'SHOW_SUBSCRIBE': 'Y', 'SHOW_SUMMARY': 'Y', 'SHOW_TOTAL_PRICE': 'N', 'COMPONENT_TEMPLATE': 'smallcart', 'CACHE_TYPE': 'A', 'SHOW_REGISTRATION': 'N', 'PATH_TO_AUTHORIZE': '/login/', 'MAX_IMAGE_SIZE': '70', 'AJAX': 'N', '~HIDE_ON_BASKET_PAGES': 'N', '~PATH_TO_BASKET': '/cart/', '~PATH_TO_ORDER': '/order/make/', '~PATH_TO_PERSONAL': '/personal/', '~PATH_TO_PROFILE': '/personal/', '~PATH_TO_REGISTER': '/login/', '~POSITION_FIXED': 'N', '~POSITION_HORIZONTAL': 'right', '~POSITION_VERTICAL': 'top', '~SHOW_AUTHOR': 'N', '~SHOW_DELAY': 'N', '~SHOW_EMPTY_VALUES': 'Y', '~SHOW_IMAGE': 'Y', '~SHOW_NOTAVAIL': 'N', '~SHOW_NUM_PRODUCTS': 'Y', '~SHOW_PERSONAL_LINK': 'N', '~SHOW_PRICE': 'Y', '~SHOW_PRODUCTS': 'Y', '~SHOW_SUBSCRIBE': 'Y', '~SHOW_SUMMARY': 'Y', '~SHOW_TOTAL_PRICE': 'N', '~COMPONENT_TEMPLATE': 'smallcart', '~CACHE_TYPE': 'A', '~SHOW_REGISTRATION': 'N', '~PATH_TO_AUTHORIZE': '/login/', '~MAX_IMAGE_SIZE': '70', '~AJAX': 'N', 'cartId': 'bx_basketFKauiI' }; // TODO \\Bitrix\Main\Web\Json::encode
+      bx_basketFKauiI.closeMessage = 'Скрыть';
+      bx_basketFKauiI.openMessage = 'Раскрыть';
+      bx_basketFKauiI.activate();
+    </script>
+    <script type="text/javascript">
+      BX.ready(function () {
+      bx_rcm_get_from_cloud(
+      'bigdata_recommended_products_Zz2YMH',
+      { 'uid': '', 'aid': '37ac67df4dc5c83ecbe9d3eee33dd98f', 'count': '60', 'op': 'sim_domain_items', 'type': 'order', 'domain': 'www.azbukacvetov.com', 'ib': '2' },
+      {
+      'parameters': 'YTo1MDp7czoxNToiQUNUSU9OX1ZBUklBQkxFIjtzOjExOiJhY3Rpb25fY2JkcCI7czoyMjoiQURESVRJT05BTF9QSUNUX1BST1BfMiI7czowOiIiO3M6MjQ6IkFERF9QUk9QRVJUSUVTX1RPX0JBU0tFVCI7czoxOiJZIjtzOjEwOiJCQVNLRVRfVVJMIjtzOjIwOiIvcGVyc29uYWwvYmFza2V0LnBocCI7czoxMjoiQ0FDSEVfR1JPVVBTIjtzOjE6IlkiO3M6MTA6IkNBQ0hFX1RJTUUiO3M6NDoiMzYwMCI7czoxMDoiQ0FDSEVfVFlQRSI7czoxOiJOIjtzOjE3OiJDQVJUX1BST1BFUlRJRVNfMiI7YToyOntpOjA7czowOiIiO2k6MTtzOjA6IiI7fXM6MTY6IkNPTlZFUlRfQ1VSUkVOQ1kiO3M6MToiTiI7czo1OiJERVBUSCI7czowOiIiO3M6MTA6IkRFVEFJTF9VUkwiO3M6MDoiIjtzOjE4OiJISURFX05PVF9BVkFJTEFCTEUiO3M6MToiTiI7czo5OiJJQkxPQ0tfSUQiO3M6MToiMiI7czoxMToiSUJMT0NLX1RZUEUiO3M6NzoiY2F0YWxvZyI7czoyOiJJRCI7TjtzOjEyOiJMQUJFTF9QUk9QXzIiO3M6MToiLSI7czoxODoiTElORV9FTEVNRU5UX0NPVU5UIjtzOjE6IjQiO3M6MTI6Ik1FU1NfQlROX0JVWSI7czoxMjoi0JrRg9C/0LjRgtGMIjtzOjE1OiJNRVNTX0JUTl9ERVRBSUwiO3M6MTg6ItCf0L7QtNGA0L7QsdC90LXQtSI7czoxODoiTUVTU19CVE5fU1VCU0NSSUJFIjtzOjIyOiLQn9C+0LTQv9C40YHQsNGC0YzRgdGPIjtzOjE4OiJQQUdFX0VMRU1FTlRfQ09VTlQiO3M6MjoiMzAiO3M6MjY6IlBBUlRJQUxfUFJPRFVDVF9QUk9QRVJUSUVTIjtzOjE6Ik4iO3M6MTA6IlBSSUNFX0NPREUiO2E6MTp7aTowO3M6NDoiQkFTRSI7fXM6MTc6IlBSSUNFX1ZBVF9JTkNMVURFIjtzOjE6IlkiO3M6MTk6IlBST0RVQ1RfSURfVkFSSUFCTEUiO3M6MjoiaWQiO3M6MjI6IlBST0RVQ1RfUFJPUFNfVkFSSUFCTEUiO3M6NDoicHJvcCI7czoyNToiUFJPRFVDVF9RVUFOVElUWV9WQVJJQUJMRSI7czowOiIiO3M6MjA6IlBST0RVQ1RfU1VCU0NSSVBUSU9OIjtzOjE6Ik4iO3M6MTU6IlBST1BFUlRZX0NPREVfMiI7YToyOntpOjA7czowOiIiO2k6MTtzOjA6IiI7fXM6ODoiUkNNX1RZUEUiO3M6ODoiYmVzdHNlbGwiO3M6MTI6IlNFQ1RJT05fQ09ERSI7czowOiIiO3M6MjA6IlNFQ1RJT05fRUxFTUVOVF9DT0RFIjtzOjA6IiI7czoxODoiU0VDVElPTl9FTEVNRU5UX0lEIjtzOjA6IiI7czoxMDoiU0VDVElPTl9JRCI7czowOiIiO3M6MjE6IlNIT1dfRElTQ09VTlRfUEVSQ0VOVCI7czoxOiJZIjtzOjE3OiJTSE9XX0ZST01fU0VDVElPTiI7czoxOiJOIjtzOjEwOiJTSE9XX0lNQUdFIjtzOjE6IlkiO3M6OToiU0hPV19OQU1FIjtzOjE6IlkiO3M6MTQ6IlNIT1dfT0xEX1BSSUNFIjtzOjE6Ik4iO3M6MTY6IlNIT1dfUFJJQ0VfQ09VTlQiO3M6MToiMSI7czoxNToiU0hPV19QUk9EVUNUU18yIjtzOjE6IlkiO3M6MTQ6IlRFTVBMQVRFX1RIRU1FIjtzOjQ6ImJsdWUiO3M6MjA6IlVTRV9QUk9EVUNUX1FVQU5USVRZIjtzOjE6Ik4iO3M6MTg6IkNPTVBPTkVOVF9URU1QTEFURSI7czo4OiIuZGVmYXVsdCI7czoxNToiUFJPUEVSVFlfQ09ERV82IjthOjI6e2k6MDtzOjA6IiI7aToxO3M6MDoiIjt9czoxNzoiQ0FSVF9QUk9QRVJUSUVTXzYiO2E6Mjp7aTowO3M6MDoiIjtpOjE7czowOiIiO31zOjIyOiJBRERJVElPTkFMX1BJQ1RfUFJPUF82IjtzOjA6IiI7czoxODoiT0ZGRVJfVFJFRV9QUk9QU182IjthOjA6e31zOjE3OiJSQ01fQ1VSX0JBU0VfUEFHRSI7czoxOiIvIjtzOjE3OiJVTklRX0NPTVBPTkVOVF9JRCI7czozNToiYmlnZGF0YV9yZWNvbW1lbmRlZF9wcm9kdWN0c19aejJZTUgiO30=.2263b1cf5f34bba11c11b42eb897790d2ef63e5e60b1b8b22b258d0325e8e28f',
+      'template': 'bigdata.f08339b7e968f180022ab103c974c88e0a461d70127bfbec3683f3dbdd499116',
+      'site_id': 's1',
+      'rcm': 'yes'
+      }
+      );
+      });
+    </script>
+    <script type="text/javascript">
+      jQuery(document).ready(function () {
+      jQuery(document).on("click", "#citySet>li,#citySet2>li", function () {
+      var townSet = jQuery(this).attr("value");
+      jQuery.ajax({
+      type: "POST",
+      url: "/ajax/setTown.php",
+      data: ({ town: townSet }),
+      success: function (data) {
+      window.location.reload();
+      }
+      });
+      });
+      });
+    </script>
+    <!-- Mirrored from www.azbukacvetov.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 18 May 2021 10:23:46 GMT-->
+  </body>
+</html>

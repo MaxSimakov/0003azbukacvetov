@@ -1,0 +1,135 @@
+/*
+ * imgAreaSelect animated border style
+ */
+
+.imgareaselect-border1 {
+	background: url(border-anim-v.gif) repeat-y left top;
+}
+
+.imgareaselect-border2 {
+    background: url(border-anim-h.gif) repeat-x left top;
+}
+
+.imgareaselect-border3 {
+    background: url(border-anim-v.gif) repeat-y right top;
+}
+
+.imgareaselect-border4 {
+    background: url(border-anim-h.gif) repeat-x left bottom;
+}
+
+.imgareaselect-border1, .imgareaselect-border2,
+.imgareaselect-border3, .imgareaselect-border4 {
+    filter: alpha(opacity=50);
+	opacity: 0.5;
+}
+
+.imgareaselect-handle {
+    background-color: #fff;
+	border: solid 1px #000;
+    filter: alpha(opacity=50);
+	opacity: 0.5;
+}
+
+.imgareaselect-outer {
+	background-color: #000;
+    filter: alpha(opacity=50);
+	opacity: 0.5;
+}
+
+.imgareaselect-selection {
+}
+
+#myava{
+	position:relative;
+	overflow:hidden;
+}
+.changemyava{
+	position:absolute;
+	width:100%;
+	line-height:30px;
+	left:0;
+	bottom:-30px;
+	background:rgba(0,0,0,0.7);
+	color:#FFFFFF;
+	text-align:center;
+	font-weight:bold;
+	cursor:pointer;
+	opacity:0;
+}
+#cropwindow{
+	position:fixed;
+	width:800px;
+	height:450px;
+	background:#ffffff;
+	border-radius:7px;
+	left:50%;top:50%;
+	z-index:100;
+	padding:0 0 20px 20px;
+	display:none;
+}
+#cropmask{
+	position:absolute;
+	width:100%;
+	height:100%;
+	left:0;top:0;
+	background:rgba(0,0,0,0.7);
+	z-index:99;
+	opacity:0;
+	display:none;
+}
+#cropwindow h1{
+	text-align:center;
+}
+#cbig{
+	
+}
+#cbig img{
+	position:relative;
+}
+#cropp{
+	float:left;
+	position:relative;
+	overflow:hidden;
+	width:145px;
+	height:145px;
+	margin-left:10px;
+}
+#cropp img{
+	position:relative;
+}
+#cropbut{
+	margin:10px 0 0 10px;
+	width:145px;
+	line-height:20px;
+}
+.nim{
+	width:170px;
+	line-height:30px;
+	text-align:center;
+	margin-bottom:10px;
+}
+
+.filedel{
+	position:absolute;
+	top:0px;
+	right:-19px;
+	display:block;
+	width:15px;
+	height:15px;
+	background:url(../../images/close_mail.html) no-repeat;
+	background-size:15px;
+	float:none;
+	margin:0;
+	padding:0;
+}
+.filedel:hover{
+	background:url(../../images/close_mail.html) 0 -15px no-repeat;
+	background-size:15px;
+}
+.filedel:before{
+	margin:0;
+	background:none;
+	width:auto;
+	height:auto;
+}
